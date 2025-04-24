@@ -46,3 +46,8 @@ This site serves as a portfolio and demonstration of design capabilities, struct
 - **Animations**: Framer Motion / CSS Animations
 
 ---
+
+```
+👩‍💻 Created By: Saira Abbas  
+GitHub: https://github.com/sairaabbas536
+```
