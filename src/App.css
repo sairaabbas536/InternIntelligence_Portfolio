@@ -1,0 +1,137 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.portfolio-container {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.portfolio-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #38bdf8, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.portfolio-subtitle {
+  font-size: 1.5rem;
+  color: #cbd5e1;
+  margin-top: 10px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
+.portfolio-button {
+  margin-top: 30px; /* Increased space */
+  background: linear-gradient(90deg, #ec4899, #38bdf8);
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+  border: none;
+  text-transform: uppercase;
+}
+
+.portfolio-button:hover {
+  background: linear-gradient(90deg, #38bdf8, #ec4899);
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.5);
+}
+
+.dummy-projects-container {
+  margin-top: 50px; 
+  width: 80%;
+  text-align: center;
+}
+
+.dummy-projects-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #facc15, #f43f5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  color: white;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
